@@ -10,4 +10,4 @@ let it do the work for you.
 0 1 * * * /path/to/track-my-changes/track.php # runs 1pm every day
 ```
 5. whenever new entry added to the file_map.php will be automatically picked up and saved in your desired directory.
-6. Leave it work for you.
+6. leave it work for you.
