@@ -3,6 +3,11 @@
 declare(strict_types=1);
 
 return [
-    '/path/to/sourcefile' => '/path/to/targetfile',
-    '/home/username/.profile' => '/home/username/dotfiles/.profile',
+    '/path/to/source/file1' => [
+        '/path/to/target/file1',
+        '/path/to/target/file2',
+    ],
+    '/path/to/source/file2' => [
+        '/path/to/target/file1',
+    ],
 ];
