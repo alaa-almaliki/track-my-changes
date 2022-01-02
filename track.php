@@ -10,6 +10,10 @@ foreach ($map as $source => $targets) {
     }
 
     foreach ($targets as $target) {
+        $directory = pathinfo($target, PATHINFO_DIRNAME);
+        if (!@mkdir($directory, 0777, true) && !is_dir($directory)) {
+            throw new \RuntimeException(sprintf('Directory "%s" was not created', $directory));
+        }
         copy($source, $target);
     }
 }
